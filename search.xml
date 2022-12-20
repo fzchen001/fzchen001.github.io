@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>hexo相关操作</title>
+      <link href="/2022/12/20/hexo%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
+      <url>/2022/12/20/hexo%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
+      
+        <content type="html"><![CDATA[<h2 id="hexo-相关命令操作"><a href="#hexo-相关命令操作" class="headerlink" title="hexo 相关命令操作"></a>hexo 相关命令操作</h2><p>创建博客</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;新的博客&quot;</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>代码模板</title>
       <link href="/2022/12/20/%E4%BB%A3%E7%A0%81%E6%A8%A1%E6%9D%BF/"/>
       <url>/2022/12/20/%E4%BB%A3%E7%A0%81%E6%A8%A1%E6%9D%BF/</url>
