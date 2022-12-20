@@ -4,11 +4,24 @@
   
     
     <entry>
+      <title>linux常用命令</title>
+      <link href="/2022/12/20/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+      <url>/2022/12/20/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo相关操作</title>
       <link href="/2022/12/20/hexo%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
       <url>/2022/12/20/hexo%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
       
-        <content type="html"><![CDATA[<h2 id="hexo-相关命令操作"><a href="#hexo-相关命令操作" class="headerlink" title="hexo 相关命令操作"></a>hexo 相关命令操作</h2><p>创建博客</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;新的博客&quot;</span></span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h2 id="hexo-相关命令操作"><a href="#hexo-相关命令操作" class="headerlink" title="hexo 相关命令操作"></a>hexo 相关命令操作</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建博客</span></span><br><span class="line">hexo new <span class="string">&quot;新的博客&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 清除本地项目并重新生成 （重新部署时使用）</span></span><br><span class="line">hexo clean &amp;&amp; hexo g</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重新生成</span></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line"><span class="comment"># 开启本地预览</span></span><br><span class="line">hexo s</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送到github</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>]]></content>
       
       
       
