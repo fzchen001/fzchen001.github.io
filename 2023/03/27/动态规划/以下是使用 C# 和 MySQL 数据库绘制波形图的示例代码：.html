@@ -1,0 +1,39 @@
+<p>以下是使用 C# 和 MySQL 数据库绘制波形图的示例代码：</p>
+<p>首先，您需要创建一个 Windows 窗体应用程序，并在窗体上添加一个 Chart 控件。然后，在窗体的构造函数中，初始化数据库连接，并从 MySQL 数据库中获取最新的 1000 条数据：</p>
+<pre><code class="csharp">using System.Data;
+using MySql.Data.MySqlClient;
+
+public partial class Form1 : Form
+{
+    private MySqlConnection conn;
+    private MySqlCommand cmd;
+
+    public Form1()
+    {
+        InitializeComponent();
+
+        // 初始化数据库连接
+        string connStr = &quot;server=localhost;user=root;password=123456;database=mydb;&quot;;
+        conn = new MySqlConnection(connStr);
+        conn.Open();
+
+        // 获取最新的 1000 条数据
+        cmd = new MySqlCommand(&quot;SELECT * FROM mytable ORDER BY id DESC LIMIT 1000&quot;, conn);
+        MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+        DataTable dataTable = new DataTable();
+        adapter.Fill(dataTable);
+
+        // 创建一个数据列，用于存储结果集中的数值
+        Series series = chart1.Series.Add(&quot;Data&quot;);
+        series.ChartType = SeriesChartType.Line;
+        foreach (DataRow row in dataTable.Rows)
+  {
+   double value = Convert.ToDouble(row[&quot;value&quot;]);
+   series.Points.AddY(value);
+  }
+    }
+}
+</code></pre>
+<p>以上代码中，我们使用 <code>MySqlConnection</code> 和 <code>MySqlCommand</code> 对象来创建 MySQL 数据库连接并执行 SQL 命令。我们在 <code>SELECT</code> 命令中使用 <code>ORDER BY</code> 子句按照 ID 倒序排序，并使用 <code>LIMIT</code> 子句限制结果集大小为 1000。</p>
+<p>接下来，我们在 Chart 控件中创建一个数据列，并从结果集中读取数值，将其添加到数据列中。最后，在应用程序运行时，Chart 控件将会自动更新并显示最新的数据波形图。</p>
+<p>希望这可以帮助到您！</p>
